@@ -43,8 +43,12 @@ jobs:
 
       - name: Build Application
         run: npm run build # Generates the /dist directory
-      - name: Deploy Compiled Files
-        uses: JamesIves/github-pages-deploy-action@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: dist # Points exactly to your build output path
-          branch: gh-pages # Automatically uploads only the dist assets here
+          path: 'dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
