@@ -47,4 +47,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # Points exactly to your build output path
-          branch: main # Automatically uploads only the dist assets here
+          branch: gh-pages # Automatically uploads only the dist assets here
