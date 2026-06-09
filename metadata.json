@@ -1,0 +1,8 @@
+{
+  "name": "Sudoku",
+  "description": "A beautiful, fully featured, mobile-responsive Sudoku web application with multiple difficulty levels, smart hints, pencil notes, game history, and statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
